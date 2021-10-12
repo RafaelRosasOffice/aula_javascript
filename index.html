@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minha página</title>
+    <!-- javascript -->
+    <script type="text/javascript" src="js/main.js"></script>
+  </head>
+  <!-- onload() é para mostrar qdo a página é carregada -->
+  <body onload="load()">
+    <!-- onclick para clicar -->
+    <button type="button" onclick="clicou()">Clique aqui</button>
+    <!-- onclick para clicar -->
+    <p id="agradecimento" onclick="redirecionar()"></p>
+    <!-- onmouseover para passar o mouse -->
+    <!-- onmouseout para voltar ao passar o mouse -->
+    <p id="mousemove" onmouseover="trocar()" onmouseout="voltar()">
+      Passe o mouse aqui
+    </p>
+    <!-- trocar ao passar o mouse com mais de um elemento com diferentes id ou sem id (this) -->
+    <p id="mousemove" onmouseover="trocar(this)" onmouseout="voltar(this)">
+      Passe o mouse aqui
+    </p>
+    <p id="mousemove2" onmouseover="trocar(this)" onmouseout="voltar(this)">
+      Passe o mouse aqui
+    </p>
+    <!-- onchange  qdo vc tem opções ele mostra o valor escolhido-->
+    <select name="" id="" onchange="funcaoChange(this)">
+      <option value="1">Valor 1</option>
+      <option value="2">Valor 2</option>
+      <option value="3">Valor 3</option>
+    </select>
+  </body>
+</html>
